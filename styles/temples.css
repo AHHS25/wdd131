@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #243b53;
+  --secondary-color: #d9a441;
+  --background-color: #f5f7fa;
+  --surface-color: #ffffff;
+  --text-color: #102a43;
+  --light-text: #ffffff;
+  --border-color: #d9e2ec;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  --heading-font: "Montserrat", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.site-title {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#menu-button {
+  background: none;
+  border: none;
+  color: var(--light-text);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  background-color: #1b2f45;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+.navigation a {
+  color: var(--light-text);
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: var(--secondary-color);
+  color: #111827;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--heading-font);
+  margin: 1rem 0 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+figure {
+  margin: 0;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  padding: 0.9rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.35rem 0;
+}
+
+#lastModified {
+  color: var(--secondary-color);
+}

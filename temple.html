@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  <meta name="description" content="Temple Album page for WDD 131 with responsive design and a hamburger menu.">
+  <meta name="author" content="Alan Hernandez">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <span class="site-title">Temple Album</span>
+      <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+    </div>
+
+    <nav id="main-nav" class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temple Album</h1>
+
+    <section class="gallery">
+      <figure>
+        <img src="images/mexico_city_temple.jpg" alt="Mexico City Temple" loading="lazy">
+        <figcaption>Mexico City Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/merida_mexico_temple.jpg" alt="Merida Mexico Temple" loading="lazy">
+        <figcaption>Merida Mexico Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/puebla_mexico_temple.jpg" alt="Puebla Mexico Temple" loading="lazy">
+        <figcaption>Puebla Mexico Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/colonia_juarez_mexico_temple.jpg" alt="Colonia Juarez Mexico Temple" loading="lazy">
+        <figcaption>Colonia Juarez Mexico Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/guatemala_temple.jpg" alt="Guatemala City Temple" loading="lazy">
+        <figcaption>Guatemala City Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/rome_italy_temple.jpg" alt="Rome Italy Temple" loading="lazy">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/santo_domingo_dominican_republic_temple.jpg" alt="Santo Domingo Republica Dominicana Temple" loading="lazy">
+        <figcaption>Santo Domingo Republica Dominicana Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/arizona_usa_temple.jpg" alt="Arizona Temple" loading="lazy">
+        <figcaption>Arizona Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/utah_usa_temple.jpg" alt="Salt Lake City Temple" loading="lazy">
+        <figcaption>Salt Lake City Temple</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Alan Hernandez | Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
