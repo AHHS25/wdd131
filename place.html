@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive country page about Japan featuring country facts and weather information.">
+  <meta name="author" content="Your Name">
+  <title>Country Page | Japan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Japan</h1>
+      <p class="tagline">Land of tradition, innovation, and natural beauty</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+        <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+        <img
+          src="images/hero-large.webp"
+          alt="Scenic view of Japan with traditional architecture and natural landscape"
+          width="1200"
+          height="600"
+        >
+      </picture>
+    </section>
+
+    <section class="content-grid">
+      <section class="card data-card">
+        <h2>Data</h2>
+        <div class="info-grid">
+          <p><strong>Capital:</strong> Tokyo</p>
+          <p><strong>Population:</strong> 123.9 million</p>
+          <p><strong>Language:</strong> Japanese</p>
+          <p><strong>Currency:</strong> Japanese Yen (JPY)</p>
+          <p><strong>Area:</strong> 377,975 km²</p>
+          <p><strong>Time Zone:</strong> JST (UTC+9)</p>
+        </div>
+      </section>
+
+      <section class="card weather-card">
+        <h2>Weather</h2>
+
+        <div class="weather-mobile-icon">
+          <img src="images/weather.svg" alt="Partly cloudy weather icon" width="64" height="64">
+        </div>
+
+        <div class="info-grid">
+          <p><strong>Temperature:</strong> <span id="temperature">8</span> °C</p>
+          <p><strong>Conditions:</strong> Partly Cloudy</p>
+          <p><strong>Wind:</strong> <span id="windspeed">12</span> km/h</p>
+          <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+        </div>
+      </section>
+    </section>
+
+    <section class="about">
+      <div class="about-content">
+        <h2>About Japan</h2>
+        <p>
+          Japan is an island nation in East Asia known for its rich history, advanced technology,
+          delicious cuisine, and stunning landscapes. From ancient temples and cherry blossoms
+          to modern cities and high-speed trains, Japan offers a unique blend of old and new.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Country Page Project | Your Name</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
