@@ -18,7 +18,6 @@ body {
   color: var(--text-color);
 }
 
-/* HEADER */
 header {
   background-color: var(--primary-color);
   color: var(--white);
@@ -45,22 +44,20 @@ header {
   cursor: pointer;
 }
 
-
-.navigation {
-  display: flex;      
+nav {
+  display: flex;
   flex-direction: column;
   background-color: var(--primary-color);
-
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
 
-.navigation.open {
+nav.open {
   max-height: 500px;
 }
 
-.navigation a {
+nav a {
   color: var(--white);
   text-decoration: none;
   padding: 1rem;
@@ -69,11 +66,10 @@ header {
   font-weight: 600;
 }
 
-.navigation a:hover {
+nav a:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* MAIN */
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -86,14 +82,12 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-/* GALLERY */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
-/* CARD */
 .temple-card {
   background-color: var(--white);
   border-radius: 12px;
@@ -107,7 +101,6 @@ h1 {
   width: 100%;
   height: 250px;
   object-fit: cover;
-
   opacity: 0;
   animation: fadeFromBlack 1.4s ease-out forwards;
 }
@@ -133,7 +126,6 @@ h1 {
   font-weight: 700;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   background-color: var(--primary-color);
@@ -142,7 +134,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* ANIMATION */
 @keyframes fadeFromBlack {
   from {
     opacity: 0;
