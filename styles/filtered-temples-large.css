@@ -1,23 +1,22 @@
 @media screen and (min-width: 700px) {
-
   #menu-button {
     display: none;
   }
 
-  .navigation {
-    display: flex; /* 👈 importante mantener */
+  nav {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    max-height: none; /* 👈 quitar colapso en desktop */
+    max-height: none;
   }
 
-  .navigation a {
+  nav a {
     border-top: none;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
     min-width: 120px;
   }
 
-  .navigation a:last-child {
+  nav a:last-child {
     border-right: none;
   }
 
