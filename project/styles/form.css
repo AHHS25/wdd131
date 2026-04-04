@@ -1,0 +1,156 @@
+:root {
+  --primary: #1f4e5f;
+  --secondary: #f4f7f8;
+  --accent: #ffb703;
+  --text: #1d1d1d;
+  --white: #ffffff;
+  --border: #cfd8dc;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+header,
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1,
+footer p {
+  margin: 0.35rem 0;
+}
+
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.review-form,
+.confirmation-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+label,
+legend {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+legend span {
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.rating-group {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.rating-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.rating-option span {
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+.checkbox-group {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.submit-btn,
+.back-link {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover,
+.back-link:hover {
+  background-color: #163946;
+}
+
+.confirmation-card {
+  text-align: center;
+}
+
+.confirmation-card h2 {
+  margin-top: 0;
+}
+
+@media (min-width: 700px) {
+  .rating-group {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .checkbox-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
