@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
-  reviewCount++;
-  localStorage.setItem("reviewCount", reviewCount);
+  let count = Number(localStorage.getItem("reviewCount")) || 0;
+  count++;
 
-  document.querySelector("#reviewCount").textContent = reviewCount;
-  document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
+  localStorage.setItem("reviewCount", count);
+
+  document.querySelector("#reviewCount").textContent = count;
+
+  document.querySelector("#lastModified").textContent =
+    "Last Modification: " + document.lastModified;
 });
