@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="380" viewBox="0 0 520 380" role="img" aria-labelledby="title desc">
+  <title id="title">Contact badge</title>
+  <desc id="desc">An original trainer message illustration with an envelope, stars, and circular badge.</desc>
+  <rect width="520" height="380" rx="28" fill="#eef4ff"></rect>
+  <rect x="80" y="120" width="220" height="145" rx="16" fill="#ffffff" stroke="#1f1f1f" stroke-width="8"></rect>
+  <path d="M82 128l108 82 108-82" fill="none" stroke="#1f1f1f" stroke-width="8"></path>
+  <circle cx="380" cy="118" r="58" fill="#ffffff" stroke="#1f1f1f" stroke-width="8"></circle>
+  <path d="M322 118h116" stroke="#1f1f1f" stroke-width="8"></path>
+  <path d="M380 60a58 58 0 0 1 0 116" fill="#ffcb05"></path>
+  <circle cx="380" cy="118" r="18" fill="#ffffff" stroke="#1f1f1f" stroke-width="7"></circle>
+  <circle cx="432" cy="280" r="20" fill="#cc0000"></circle>
+  <circle cx="98" cy="82" r="16" fill="#2a75bb"></circle>
+</svg>

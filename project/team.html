@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Use the Pokémon Adventure Hub team builder to filter Pokémon by type, compare roles, and save favorites to local storage.">
+  <meta name="author" content="Alan Hernandez">
+  <title>Pokémon Adventure Hub | Team Builder</title>
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">◓</span>
+        <div>
+          <p class="site-name">Pokémon Adventure Hub</p>
+          <p class="site-tagline">Build smarter teams. Explore stronger choices.</p>
+        </div>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="team.html">Team Builder</a></li>
+          <li><a href="contact.html">Trainer Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Interactive collection</p>
+        <h1>Team Builder</h1>
+        <p>Filter the roster, compare roles, and save up to six favorites for your planned team.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container controls-layout">
+        <div class="filter-panel">
+          <h2>Filter Pokémon</h2>
+          <label for="type-filter">Select a type</label>
+          <select id="type-filter" name="type-filter">
+            <option value="all">All Types</option>
+            <option value="electric">Electric</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
+            <option value="psychic">Psychic</option>
+            <option value="dragon">Dragon</option>
+            <option value="normal">Normal</option>
+            <option value="steel">Steel</option>
+          </select>
+
+          <p id="results-summary" class="results-summary">Showing all available Pokémon.</p>
+
+          <div class="favorites-callout">
+            <h3>Saved favorites</h3>
+            <div id="favorites-panel" class="favorites-panel" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <div class="roster-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Generated with JavaScript</p>
+            <h2>Roster</h2>
+          </div>
+
+          <div id="pokemon-list" class="card-grid" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container split-layout">
+        <div class="image-panel">
+          <img src="images/team-badge.svg" alt="Original team guide emblem with battle board, stars, and a bold circular badge." width="540" height="380" loading="lazy">
+        </div>
+
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Useful idea</p>
+            <h2>Try not to repeat the same weakness.</h2>
+          </div>
+          <p>
+            If your team stacks several Pokémon that are weak to the same type, one opponent can
+            sweep too easily. Filtering helps you compare options and reduce repeated weaknesses.
+          </p>
+          <p>
+            A balanced team can be more reliable than a team that only looks strong on paper.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentyear"></span> Alan Hernandez | WDD 131 Final Project</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Team Builder</a></li>
+          <li><a href="contact.html">Trainer Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+  <title id="title">Hero badge</title>
+  <desc id="desc">An original emblem inspired by adventure, featuring a circular badge, stars, and energy accents.</desc>
+  <rect width="600" height="420" rx="28" fill="#eef4ff"></rect>
+  <circle cx="300" cy="210" r="120" fill="#ffffff" stroke="#1f1f1f" stroke-width="12"></circle>
+  <path d="M180 210h240" stroke="#1f1f1f" stroke-width="12"></path>
+  <path d="M300 90a120 120 0 0 1 0 240" fill="#ffcb05"></path>
+  <circle cx="300" cy="210" r="36" fill="#ffffff" stroke="#1f1f1f" stroke-width="10"></circle>
+  <circle cx="465" cy="92" r="28" fill="#cc0000"></circle>
+  <circle cx="116" cy="118" r="18" fill="#2a75bb"></circle>
+  <path d="M455 264l18-34 24 16-18 34z" fill="#ffcb05"></path>
+  <path d="M130 290l22-50 24 20-18 40z" fill="#2a75bb"></path>
+  <path d="M110 330h380" stroke="#d9dfeb" stroke-width="8" stroke-linecap="round"></path>
+</svg>

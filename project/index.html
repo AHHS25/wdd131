@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pokémon Adventure Hub is a responsive fan-inspired guide with featured Pokémon, team-building tips, favorites, and a trainer contact form.">
+  <meta name="author" content="Alan Hernandez">
+  <title>Pokémon Adventure Hub | Home</title>
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">◓</span>
+        <div>
+          <p class="site-name">Pokémon Adventure Hub</p>
+          <p class="site-tagline">Build smarter teams. Explore stronger choices.</p>
+        </div>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="navigation">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="team.html">Team Builder</a></li>
+          <li><a href="contact.html">Trainer Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Fan-inspired planning site</p>
+          <h1>Discover balanced Pokémon teams with clear type coverage.</h1>
+          <p>
+            Pokémon Adventure Hub helps new and returning trainers compare roles, learn type balance,
+            and save favorite Pokémon for a custom six-member squad.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary-button" href="team.html">Open Team Builder</a>
+            <a class="button secondary-button" href="contact.html">Send a Trainer Note</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="images/hero-badge.svg" alt="Original Poké Ball inspired emblem with stars and lightning accents." width="600" height="420">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What you can do here</p>
+          <h2>Quick site overview</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Explore featured Pokémon</h3>
+            <p>Read short role summaries and compare offense, defense, and support options.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Filter by type</h3>
+            <p>Sort the team list by type and compare different roles.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Save your favorites</h3>
+            <p>Use local storage to keep your favorite Pokémon available between visits.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Featured picks</p>
+          <h2>Recommended starters for a balanced team</h2>
+          <p>These cards are generated with JavaScript from an array of objects.</p>
+        </div>
+
+        <div id="featured-pokemon" class="card-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-layout">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Strategy tip</p>
+            <h2>Balance role and type, not only power.</h2>
+          </div>
+          <p>
+            A strong team usually mixes speed, defense, and utility. A trainer who only picks
+            powerful attackers can struggle against poor type matchups.
+          </p>
+          <p>
+            Start with one fast attacker, one bulky defender, one support option, and then add type
+            coverage to reduce major weaknesses.
+          </p>
+          <a class="button primary-button" href="team.html">Build My Team</a>
+        </div>
+
+        <div class="image-panel">
+          <img src="images/team-badge.svg" alt="Original battle plan illustration with a badge, stars, and a team board." width="540" height="380" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Saved favorites</p>
+          <h2>Your current favorites</h2>
+          <p>Your saved team appears here and updates from local storage.</p>
+        </div>
+        <div id="favorites-panel" class="favorites-panel" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentyear"></span> Alan Hernandez | WDD 131 Final Project</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Team Builder</a></li>
+          <li><a href="contact.html">Trainer Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
